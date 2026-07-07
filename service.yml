@@ -1,0 +1,20 @@
+name: fastapi
+type: service
+from: python
+fromVersionConstraint: "^1.0.0"
+fromVersion: "1.0.0"
+icon: fastapi
+title: FastAPI
+labels:
+- fastapi
+- python
+
+env:
+- name: GUNICORN_APP
+  value: main:app
+- name: GUNICORN_WORKER_CLASS
+  value: uvicorn.workers.UvicornWorker
+
+build:
+  dockerfile: Dockerfile
+  connect: true
