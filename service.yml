@@ -12,8 +12,13 @@ env:
 - name: GUNICORN_APP
   value: main:app
 - name: GUNICORN_WORKER_CLASS
-  value: uvicorn.workers.UvicornWorker
+  value: uvicorn_worker.UvicornWorker
 
 build:
   dockerfile: Dockerfile
   connect: true
+  templates:
+  - name: fastapi
+    title: FastAPI boilerplate
+    repo: https://github.com/wodby/fastapi-boilerplate
+    branch: main
