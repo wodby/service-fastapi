@@ -17,7 +17,7 @@ env:
 build:
   dockerfile: Dockerfile
   connect: true
-  templates:
+  boilerplates:
   - name: fastapi
     title: FastAPI boilerplate
     repo: https://github.com/wodby/fastapi-boilerplate
