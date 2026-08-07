@@ -2,7 +2,7 @@ name: fastapi
 type: service
 from: python
 fromVersionConstraint: "^1.0.0"
-fromVersion: "1.0.4"
+fromVersion: "1.0.5"
 title: Python (FastAPI)
 labels:
 - fastapi
