@@ -3,6 +3,7 @@ type: service
 from: python
 fromVersionConstraint: "^1.0.0"
 fromVersion: "1.0.12"
+guidance: GUIDANCE.md
 title: Python (FastAPI)
 labels:
 - fastapi
